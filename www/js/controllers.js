@@ -33,7 +33,7 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('Device', function($scope) {
+.controller('DeviceCtrl', function($scope) {
   $scope.device = [
     { title: 'Model', value: device.model },
     { title: 'Platform', value: device.platform },
@@ -41,11 +41,6 @@ angular.module('starter.controllers', [])
     { title: 'Version', value: device.version }
   ];
 })
-device.cordova
-device.model
-device.platform
-device.uuid
-device.version
 
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
