@@ -33,16 +33,20 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+.controller('Device', function($scope) {
+  $scope.device = [
+    { title: 'Model', value: device.model },
+    { title: 'Platform', value: device.platform },
+    { title: 'UUID', value: device.uuid },
+    { title: 'Version', value: device.version }
   ];
 })
+device.cordova
+device.model
+device.platform
+device.uuid
+device.version
+
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 });
