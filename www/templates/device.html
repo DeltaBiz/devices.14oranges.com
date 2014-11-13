@@ -1,10 +1,10 @@
-<ion-view title="Playlists">
+<ion-view title="device">
   <ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content class="has-header">
     <ion-list>
-      <ion-item ng-repeat="device in Device" href="#/app/playlists/{{device.value}}">
+      <ion-item ng-repeat="device in device" href="#/app/playlists/{{device.value}}">
         {{device.title}} : {{device.value}}
       </ion-item>
     </ion-list>
