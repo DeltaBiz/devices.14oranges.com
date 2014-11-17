@@ -52,7 +52,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent' :{
           templateUrl: "templates/device.html",
-          controller: 'DeviceCtrl'
+          controller: 'ThingCtrl'
         }
       }
     })
