@@ -34,7 +34,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ThingCtrl', function($scope) {
-  $scope.thing = [
+  $scope.Things = [
     { title: 'Model', value: device.model },
     { title: 'Platform', value: device.platform },
     { title: 'UUID', value: device.uuid },
