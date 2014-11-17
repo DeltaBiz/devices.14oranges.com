@@ -33,8 +33,8 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('ThingCtrl', function($scope) {
-  $scope.thing = [
+.controller('DeviceCtrl', function($scope) {
+  $scope.device = [
     { title: 'Model', value: device.model },
     { title: 'Platform', value: device.platform },
     { title: 'UUID', value: device.uuid },
@@ -43,5 +43,5 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('ThingCtrl', function($scope, $stateParams) {
+.controller('DeviceCtrl', function($scope, $stateParams) {
 });
