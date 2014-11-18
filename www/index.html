@@ -25,11 +25,19 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.structure.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.theme.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons-1.4.5.css" />
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/fastclick.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
         <title>Devices</title>
     </head>
     <body>
+
+
         <!-- Start of first page: #one -->
 <div data-role="page" id="one">
 
@@ -38,12 +46,34 @@
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
-		<h2>Device</h2>
-		<p></p>
+		<h2>Device Info</h2>
+		<p>Platform: <span id="platform"></span></p>
+		<p>Model: <span id="model"></span></p>
+		<p>UUID: <span id="uuid"></span></p>
+		<p>Version: <span id="version"></span></p>
+	
+		<h3>Confirm Device</h3>	
+		<select name="DeviceUUID" id="DeviceUUID">
+			<option name="123455" >123455</option>
+			<option name="123455">123455</option>			
+			<option name="123455" SELECTED>123455</option>
+		</select>
+		<h3>Confirm Current User</h3>	
+		<select name="DeviceUser" id="DeviceUser">
+			<option name="123455" >Ed</option>
+			<option name="123455">Joe</option>			
+			<option name="123455" SELECTED>Shane</option>
+		</select>
+		
 	</div><!-- /content -->
 
-	<div data-role="footer" data-theme="a">
-		<h4>Page Footer</h4>
+	<div data-role="footer" data-theme="a" data-position="fixed">
+		<div data-role="navbar">
+  <ul>
+    <li><a href="#one" data-icon="star" class="ui-btn-active">Device</a></li>
+    <li><a href="#two" data-icon="gear">Account</a></li>
+  </ul>
+</div><!-- /navbar -->
 	</div><!-- /footer -->
 	
 </div><!-- /page one -->
@@ -61,13 +91,15 @@
 
 	</div><!-- /content -->
 
-	<div data-role="footer">
-		<h4>Page Footer</h4>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+  <ul>
+    <li><a href="#one" data-icon="star">Device</a></li>
+    <li><a href="#two" data-icon="gear" class="ui-btn-active">Account</a></li>
+  </ul>
+</div><!-- /navbar -->
 	</div><!-- /footer -->
 </div><!-- /page two -->
 
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
